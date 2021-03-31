@@ -21,24 +21,36 @@ html, body, main{
 }
 
 body {
-    position: relative;
     margin: 0;
     line-height: 1;
-    overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
     color: var(--dark-blue);
     background-color: var(--dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-position: top calc(-539px + 1rem) left calc(-742px + 1rem), top calc(225px + 1.5rem) left calc(111px + 1.5rem);
+    background-repeat: no-repeat, no-repeat;
+}
+
+@media (min-width: 500px){
+    body {
+        background-position:top -463px left -433px, top 445px  left 388px;
+    }
 }
 
 #bg-pattern-top {
+    overflow-x: hidden;
     position: absolute;
+    object-fit: contain ;
     right: 40%;
     bottom: 40%;
     z-index: -1;
+
 }
 
 #bg-pattern-bottom {
+    overflow-x: hidden;
     position: absolute;
+    object-fit: contain ;
     left: 40%;
     top: 40%;
     z-index: -1;
@@ -64,7 +76,13 @@ article p {
     font-size: 18px;
 }
 
-#image-wrapper {
+article section {
+    display: flex;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+#profile-image-wrapper {
     position: relative;
 }
 
@@ -81,11 +99,9 @@ article p {
 }
 
 #profile-details {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 40px;
-    margin-bottom: 20px;
+    
     color: var(--grayish-blue);
 }
 
@@ -100,10 +116,7 @@ article p {
 }
 
 #profile-social {
-    display: flex;
     justify-content: space-evenly;
-    padding-top: 40px;
-    margin-bottom: 20px;
     border-top: 2px solid hsl(227deg 10% 46% / 59%);
 }
 
