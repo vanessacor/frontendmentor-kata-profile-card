@@ -24,22 +24,23 @@ body {
     position: relative;
     margin: 0;
     line-height: 1;
-    color: var(--dark-blue);
+    overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
+    color: var(--dark-blue);
     background-color: var(--dark-cyan);
 }
 
 #bg-pattern-top {
     position: absolute;
     right: 40%;
-    bottom: 20%;
+    bottom: 40%;
     z-index: -1;
 }
 
 #bg-pattern-bottom {
     position: absolute;
     left: 40%;
-    top: 20%;
+    top: 40%;
     z-index: -1;
 }
 
