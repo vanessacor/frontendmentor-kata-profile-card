@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+/* reset  */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+html, body, main{
+    height: 100%;
+}
+
+:root {
+    --dark-cyan:hsl(185, 75%, 39%);
+    --dark-blue:hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+    --white: #ffffff;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    line-height: 1;
+    color: var(--dark-blue);
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--dark-cyan);
+}
+
+#bg-pattern-top {
+    position: absolute;
+    right: 40%;
+    bottom: 20%;
+    z-index: -1;
+}
+
+#bg-pattern-bottom {
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: -1;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+article {
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 90%;
+    border-radius: 10%;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+article p {
+    margin: 0;
+    font-size: 18px;
+}
+
+#image-wrapper {
+    position: relative;
+}
+
+#image {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 5px solid var(--white);
+    border-radius: 50%;
+}
+
+#profile-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    color: var(--grayish-blue);
+}
+
+#profile-details p:first-child {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+#profile-details span {
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+#profile-social {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    border-top: 2px solid hsl(227deg 10% 46% / 59%);
+}
+
+#profile-social p {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+#profile-social span {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: .7rem;
+}
+
