@@ -41,21 +41,12 @@ body {
   background-repeat: no-repeat, no-repeat;
 }
 
-#bg-pattern-top {
+#bg-pattern-top, #bg-pattern-bottom {
   overflow-x: hidden;
   position: absolute;
   object-fit: contain;
   right: 40%;
   bottom: 40%;
-  z-index: -1;
-}
-
-#bg-pattern-bottom {
-  overflow-x: hidden;
-  position: absolute;
-  object-fit: contain;
-  left: 40%;
-  top: 40%;
   z-index: -1;
 }
 
@@ -69,9 +60,9 @@ article {
   z-index: 1;
   margin: 0 auto;
   max-width: 90%;
+  overflow: hidden;
   border-radius: 10%;
   background-color: var(--white);
-  overflow: hidden;
 }
 
 article p {
@@ -89,20 +80,22 @@ article section {
   position: relative;
 }
 
-#profile-image-wrapper img:first-child {
+#profile-background {
   height: 140px;
+  width: 350px;
   margin-bottom: 50px;
+  background-color: var(--dark-cyan);
 }
 
 #image {
-  display: block;
-  margin: auto;
   position: absolute;
   bottom: 0;
   left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  display: block;
+  margin: auto;
   border: 5px solid var(--white);
   border-radius: 50%;
-  transform: translateX(-50%) translateY(50%);
 }
 
 #profile-details {
@@ -117,12 +110,12 @@ article section {
 }
 
 #profile-location {
-  font-size: .8rem;
   padding-top: 10px;
+  font-size: 0.8rem;
 }
 #profile-details span {
-  font-weight: 400;
   color: var(--grayish-blue);
+  font-weight: 400;
 }
 
 #profile-social {
@@ -139,8 +132,15 @@ article section {
 }
 
 #profile-social span {
-  font-weight: 400;
+  padding-top: 10px;
   color: var(--grayish-blue);
   font-size: 0.7rem;
-  padding-top: 10px;
+  font-weight: 400;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 5px 5px;
+  font-size: 0.5rem;
 }
