@@ -1,136 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap");
 /* reset  */
 
 html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
 
-html, body, main{
-    height: 100%;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 :root {
-    --dark-cyan:hsl(185, 75%, 39%);
-    --dark-blue:hsl(229, 23%, 23%);
-    --grayish-blue: hsl(227, 10%, 46%);
-    --white: #ffffff;
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --grayish-blue: hsl(227, 10%, 46%);
+  --white: #ffffff;
 }
 
 body {
-    margin: 0;
-    line-height: 1;
-    font-family: 'Kumbh Sans', sans-serif;
-    color: var(--dark-blue);
-    background-color: var(--dark-cyan);
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-    background-position: top calc(-539px + 1rem) left calc(-742px + 1rem), top calc(225px + 1.5rem) left calc(111px + 1.5rem);
-    background-repeat: no-repeat, no-repeat;
-}
-
-@media (min-width: 500px){
-    body {
-        background-position:top -463px left -433px, top 445px  left 388px;
-    }
+  margin: 0;
+  line-height: 1;
+  font-family: "Kumbh Sans", sans-serif;
+  color: var(--dark-blue);
+  background-color: var(--dark-cyan);
+  background-image: url(/images/bg-pattern-top.svg),
+    url(/images/bg-pattern-bottom.svg);
+  background-position: top -50vh right 50vw, top 50vh left 50vw;
+  background-repeat: no-repeat, no-repeat;
 }
 
 #bg-pattern-top {
-    overflow-x: hidden;
-    position: absolute;
-    object-fit: contain ;
-    right: 40%;
-    bottom: 40%;
-    z-index: -1;
-
+  overflow-x: hidden;
+  position: absolute;
+  object-fit: contain;
+  right: 40%;
+  bottom: 40%;
+  z-index: -1;
 }
 
 #bg-pattern-bottom {
-    overflow-x: hidden;
-    position: absolute;
-    object-fit: contain ;
-    left: 40%;
-    top: 40%;
-    z-index: -1;
+  overflow-x: hidden;
+  position: absolute;
+  object-fit: contain;
+  left: 40%;
+  top: 40%;
+  z-index: -1;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 article {
-    z-index: 1;
-    margin: 0 auto;
-    max-width: 90%;
-    border-radius: 10%;
-    background-color: var(--white);
-    overflow: hidden;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 10%;
+  background-color: var(--white);
+  overflow: hidden;
 }
 
 article p {
-    margin: 0;
-    font-size: 18px;
+  margin: 0;
+  font-size: 18px;
 }
 
 article section {
-    display: flex;
-    padding-top: 40px;
-    margin-bottom: 20px;
+  display: flex;
+  padding-top: 40px;
+  margin-bottom: 25px;
 }
 
 #profile-image-wrapper {
-    position: relative;
+  position: relative;
+}
+
+#profile-image-wrapper img:first-child {
+  height: 140px;
+  margin-bottom: 50px;
 }
 
 #image {
-    display: block;
-    margin: auto;
-    position: absolute;
-    top: 80%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border: 5px solid var(--white);
-    border-radius: 50%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  border: 5px solid var(--white);
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(50%);
 }
 
 #profile-details {
-    flex-direction: column;
-    align-items: center;
-    
-    color: var(--grayish-blue);
+  flex-direction: column;
+  align-items: center;
+  color: var(--grayish-blue);
 }
 
-#profile-details p:first-child {
-    color: var(--dark-blue);
-    font-weight: 700;
+#profile-name {
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
+#profile-location {
+  font-size: .8rem;
+  padding-top: 10px;
+}
 #profile-details span {
-    font-weight: 400;
-    color: var(--grayish-blue);
+  font-weight: 400;
+  color: var(--grayish-blue);
 }
 
 #profile-social {
-    justify-content: space-evenly;
-    border-top: 2px solid hsl(227deg 10% 46% / 59%);
+  justify-content: space-evenly;
+  border-top: 2px solid hsl(227deg 10% 46% / 59%);
 }
 
 #profile-social p {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    color: var(--dark-blue);
-    font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-blue);
+  font-weight: 700;
 }
 
 #profile-social span {
-    font-weight: 400;
-    color: var(--grayish-blue);
-    font-size: .7rem;
+  font-weight: 400;
+  color: var(--grayish-blue);
+  font-size: 0.7rem;
+  padding-top: 10px;
 }
-
