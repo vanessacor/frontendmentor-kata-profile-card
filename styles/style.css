@@ -35,8 +35,8 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   color: var(--dark-blue);
   background-color: var(--dark-cyan);
-  background-image: url(/images/bg-pattern-top.svg),
-    url(/images/bg-pattern-bottom.svg);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
   background-position: top -50vh right 50vw, top 50vh left 50vw;
   background-repeat: no-repeat, no-repeat;
 }
